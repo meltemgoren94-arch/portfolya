@@ -11,6 +11,8 @@ export interface CaseStudy {
   category: string;
   image: string;
   imageAlt: string;
+  logo?: string;
+  logoAlt?: string;
   detailImages?: string[];
 }
 
@@ -101,9 +103,19 @@ export function CaseStudySection({ caseStudy, index }: CaseStudySectionProps) {
               {caseStudy.title}
             </h2>
 
-            <p className="text-gray-400 text-lg md:text-xl font-light mb-10 leading-relaxed max-w-lg">
+            <p className="text-gray-400 text-lg md:text-xl font-light mb-8 leading-relaxed max-w-lg">
               {caseStudy.description}
             </p>
+
+            {caseStudy.logo && (
+              <div className="mb-8">
+                <img
+                  src={caseStudy.logo}
+                  alt={caseStudy.logoAlt ?? ""}
+                  className="h-8 object-contain opacity-70"
+                />
+              </div>
+            )}
 
             <div>
               <motion.button

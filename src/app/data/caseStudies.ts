@@ -1,12 +1,10 @@
 import { CaseStudy } from "../components/CaseStudySection";
-import iscepImage from "../components/img/iscep.png";
-import borusanImg1 from "../components/img/borusan img1.png";
-import borusanImg2 from "../components/img/borusan img2.png";
 import icon1Image from "../components/img/3dicon1.png";
-import icon2Image from "../components/img/3dicon2.png";
 import icon3Image from "../components/img/3dicon3.png";
 import icon4Image from "../components/img/3dicon4.png";
-import logistics3dImage from "../components/img/logistics_3d.png";
+import isbankLogo from "../../Isbank-case/isbank-logo.png";
+import retailLogo from "../../retail-case/retail-logo.png";
+import airportLogo from "../../airport-case/airport-logo.png";
 
 export const caseStudies: CaseStudy[] = [
   {
@@ -17,6 +15,8 @@ export const caseStudies: CaseStudy[] = [
     category: "UX Consultant",
     image: icon1Image,
     imageAlt: "Banking app 3D concept visualization",
+    logo: isbankLogo,
+    logoAlt: "İşbank logo",
   },
 
   {
@@ -27,6 +27,8 @@ export const caseStudies: CaseStudy[] = [
     category: "Sr Product Designer",
     image: icon3Image,
     imageAlt: "Retail operations and employee experiences interface",
+    logo: retailLogo,
+    logoAlt: "Retail brand logo",
   },
   {
     id: "airport-experience",
@@ -36,5 +38,7 @@ export const caseStudies: CaseStudy[] = [
     category: "Service Design",
     image: icon4Image,
     imageAlt: "Airport digital experience 3D concept",
+    logo: airportLogo,
+    logoAlt: "Airport digital experience logo",
   },
 ];
