@@ -1,0 +1,32 @@
+Istanbul Airport Mobile App: Passenger Journey
+Project Overview As one of the world’s largest aviation hubs, Istanbul Airport requires more than just a flight tracker; it demands a comprehensive digital companion. I designed this mobile experience to cover the entire "Home-to-Gate" journey, transforming a potentially stressful environment into a seamless, high-end user experience.
+
+1. The Home-to-Gate Experience
+This feature serves as the core of the application, guiding passengers from their doorstep to the aircraft door.
+
+Contextual Flight Tracking: Dynamic updates on gate assignments, boarding status, and baggage carousel information delivered via push notifications.
+
+Smart Carpark Management: Integrated reservation system and a "Find My Car" feature, ensuring that the transition from vehicle to terminal is frictionless.
+
+Indoor Explore & Navigation
+Navigating 76 million square meters of terminal space was a primary UX challenge.
+
+Intuitive Mapping: High-fidelity indoor maps featuring "blue-dot" navigation to guide users to their gate or specific points of interest.
+
+Discovery Layer: A categorized directory for food, beverage, and retail stores, allowing passengers to explore terminal offerings based on their proximity.
+
+2. Istanbul Airport Chatbot: AI-Powered Concierge
+UI Design & Interaction Designed to act as a digital assistant for domestic and international travelers, the Chatbot UI focuses on rapid information retrieval in a mobile-first format.
+
+Targeted Assistance: Provides instant guidance on flight gates, lounge locations, and fast-track zones.
+
+Conversational Flow: Utilizing quick-reply buttons and rich media cards to display shop menus or service details, reducing the need for manual typing in a busy airport setting.
+
+3. İGA Pass: Premium Loyalty & Subscription Services
+E-commerce & Subscription UI The redesign of the İGA Pass platform focused on making luxury airport services accessible and easy to purchase.
+
+Premium Service Showcase: A visually driven interface for high-value services including Lounge access, Buggy transfers, Fast Track, and Meet & Greet assistance.
+
+Conversion-Optimized Monetization: * Instant Bundles: Designed for one-time travelers seeking immediate comfort.
+
+Subscription Models: A clear, tiered UI for monthly and yearly memberships, targeting frequent flyers and corporate accounts.

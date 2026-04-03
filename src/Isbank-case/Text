@@ -1,0 +1,29 @@
+(Section 1 Context )
+
+1. Strategic Dashboard Personalization
+The core objective was to transform the İşCep homepage into an intent-driven space for loan holders. By analyzing user behavior, we identified that active loan customers require quicker access to their debt status.
+
+Contextual Widgets: We introduced a dynamic "My Loans" widget on the homepage. This is not a static element; it is suggested only to customers with active loans, ensuring a decluttered and relevant UI.
+
+Intent-Based Delivery: Instead of requiring users to navigate through multiple menus, the most critical financial information is brought to the forefront when it is most needed.
+
+2. Proactive Debt Management & Financial Health
+Moving beyond simple reminders, we integrated "nudge" mechanics to support the user’s financial health and prevent payment delays.
+
+Proactive Delay Prevention: For users with insufficient balances, the system offers smart alternatives such as Overdraft (Ek Hesap) suggestions, "Pull Funds" from linked accounts at other banks, or the "Bring Money" feature.
+
+AI-Powered Assistance (Maxi): As the payment date approaches, the "Pay Loan" button is prioritized within the AI assistant (Maxi).
+
+Financial Wellness Coaching: For users with high debt-to-income ratios, we integrated personalized budget management tips and spending habit insights to foster long-term financial stability.
+
+3. Enhanced Menu Experience & Emotional Connection
+We refined the internal loan menus to move from a "transactional" feel to an "achievable journey," aligning the UI with the user’s mental model.
+
+Visualizing Progress: We added progress bars to visualize paid installments. Seeing the progress bar fill up creates an emotional sense of accomplishment and clarity.
+
+UI Consistency & Hierarchy: Research showed that many users still use the general "Payments" menu to pay loans due to ingrained habits. To address this, we synchronized the experience across both the "Payments" and "Loans" menus.
+
+Microcopy Refinement: We standardized the Call-to-Action (CTA) from "Pay consumer loan" to "Pay loan debt" to ensure terminology remains consistent, clear, and professional across all touchpoints.
+
+(Section 2 Context )
+Didnt write yet
