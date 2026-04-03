@@ -104,15 +104,6 @@ export function HeroSection() {
           SOLVE FOR IMPACT.
         </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-gray-400 text-sm md:text-base max-w-2xl mx-auto"
-        >
-          With values we believe we can bring to the world
-        </motion.p>
-
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
