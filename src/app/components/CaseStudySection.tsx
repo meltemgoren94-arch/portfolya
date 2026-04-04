@@ -12,7 +12,7 @@ export interface CaseStudy {
   image: string;
   imageAlt: string;
   logo?: string;
-  logoAlt?: string;
+  year?: string;
   detailImages?: string[];
 }
 
@@ -35,13 +35,13 @@ export function CaseStudySection({ caseStudy, index }: CaseStudySectionProps) {
   const imageOpacity = useTransform(scrollYProgress, [0, 0.8, 1], [0, 0.8, 1]);
 
   return (
-    <div id={caseStudy.id} ref={sectionRef} className="min-h-screen flex items-center justify-center px-6 py-32 bg-transparent">
+    <div id={caseStudy.id} ref={sectionRef} className="min-h-screen flex items-center justify-center px-4 sm:px-6 py-16 sm:py-32 bg-transparent">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8 }}
-        className="max-w-7xl w-full grid md:grid-cols-2 gap-12 md:gap-16 items-center"
+        className="max-w-7xl w-full grid md:grid-cols-2 gap-8 md:gap-16 items-center"
       >
         {/* Image — always left */}
         <motion.div
@@ -93,29 +93,44 @@ export function CaseStudySection({ caseStudy, index }: CaseStudySectionProps) {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="flex flex-col justify-center h-full"
           >
+            {(caseStudy.logo || caseStudy.year) && (
+              <motion.div
+                className="mb-5 flex items-center gap-3"
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
+                {caseStudy.logo && (
+                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white/10 backdrop-blur-md border border-white/15 shadow-lg hover:bg-white/15 transition-colors duration-300">
+                    <img
+                      src={caseStudy.logo}
+                      alt={`${caseStudy.title} logo`}
+                      className="w-7 h-7 object-contain"
+                    />
+                  </div>
+                )}
+                {caseStudy.year && (
+                  <span className="inline-flex items-center px-3 py-1.5 rounded-lg bg-white/8 backdrop-blur-sm border border-white/10 text-white/60 text-xs font-medium tracking-wider">
+                    {caseStudy.year}
+                  </span>
+                )}
+              </motion.div>
+            )}
+
             <div className="mb-4">
               <span className="text-xl md:text-2xl font-medium text-white tracking-tight">
                 {caseStudy.category}
               </span>
             </div>
 
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-white mb-6 leading-none">
+            <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-white mb-4 sm:mb-6 leading-none">
               {caseStudy.title}
             </h2>
 
-            <p className="text-gray-400 text-lg md:text-xl font-light mb-8 leading-relaxed max-w-lg">
+            <p className="text-gray-400 text-base sm:text-lg md:text-xl font-light mb-6 sm:mb-10 leading-relaxed max-w-lg">
               {caseStudy.description}
             </p>
-
-            {caseStudy.logo && (
-              <div className="mb-8">
-                <img
-                  src={caseStudy.logo}
-                  alt={caseStudy.logoAlt ?? ""}
-                  className="h-8 object-contain opacity-70"
-                />
-              </div>
-            )}
 
             <div>
               <motion.button

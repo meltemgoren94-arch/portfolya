@@ -1,10 +1,11 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
+import tipografiSvg from "./img/tipografi-design.svg";
 
 const NewtonsCradle = () => {
   return (
     <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none opacity-[0.25]">
-      <div className="relative flex flex-col items-center">
+      <div className="relative flex flex-col items-center scale-[0.5] sm:scale-[0.65] md:scale-[0.8] lg:scale-100 origin-center">
         {/* Top Metallic Support Bar */}
         <div className="w-[450px] h-3 bg-gradient-to-r from-gray-800 via-gray-300 to-gray-800 rounded-full shadow-[0_5px_15px_rgba(255,255,255,0.1)] relative z-10" />
         
@@ -57,12 +58,11 @@ export function HeroSection() {
   });
 
   const y1 = useTransform(scrollYProgress, [0, 1], [0, 200]);
-  const y2 = useTransform(scrollYProgress, [0, 1], [0, -100]);
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
   return (
     <div ref={containerRef} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-transparent">
-      {/* Animated wave background */}
+      {/* Newton's Cradle — in the back */}
       <NewtonsCradle />
 
       {/* Grid pattern overlay for minimal aesthetic */}
@@ -74,10 +74,10 @@ export function HeroSection() {
         }} />
       </div>
 
-      {/* Content */}
+      {/* Content — SVG replaces heading text */}
       <motion.div
         style={{ opacity }}
-        className="relative z-10 text-center px-6 max-w-5xl mx-auto"
+        className="relative z-10 text-center px-6 max-w-5xl mx-auto flex flex-col items-center"
       >
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -90,19 +90,19 @@ export function HeroSection() {
           </div>
         </motion.div>
 
-        <motion.h1
+        {/* Tipografi SVG — full solid white, replaces the old heading */}
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight tracking-tight uppercase"
-          style={{
-            textShadow: '0 0 40px rgba(255, 255, 255, 0.1)',
-          }}
+          className="mb-6 w-full flex justify-center"
         >
-          DESIGN WITH INTENT.
-          <br />
-          SOLVE FOR IMPACT.
-        </motion.h1>
+          <img
+            src={tipografiSvg}
+            alt="Design Intent Solve Impact"
+            className="w-[85vw] sm:w-[70vw] md:w-[53vw] max-w-[500px] h-auto select-none"
+          />
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0 }}

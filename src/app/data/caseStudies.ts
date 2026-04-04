@@ -1,7 +1,12 @@
 import { CaseStudy } from "../components/CaseStudySection";
+import iscepImage from "../components/img/iscep.png";
+import borusanImg1 from "../components/img/borusan img1.png";
+import borusanImg2 from "../components/img/borusan img2.png";
 import icon1Image from "../components/img/3dicon1.png";
+import icon2Image from "../components/img/3dicon2.png";
 import icon3Image from "../components/img/3dicon3.png";
 import icon4Image from "../components/img/3dicon4.png";
+import logistics3dImage from "../components/img/logistics_3d.png";
 import isbankLogo from "../../Isbank-case/isbank-logo.png";
 import retailLogo from "../../retail-case/retail-logo.png";
 import airportLogo from "../../airport-case/airport-logo.png";
@@ -16,7 +21,7 @@ export const caseStudies: CaseStudy[] = [
     image: icon1Image,
     imageAlt: "Banking app 3D concept visualization",
     logo: isbankLogo,
-    logoAlt: "İşbank logo",
+    year: "2025",
   },
 
   {
@@ -28,17 +33,17 @@ export const caseStudies: CaseStudy[] = [
     image: icon3Image,
     imageAlt: "Retail operations and employee experiences interface",
     logo: retailLogo,
-    logoAlt: "Retail brand logo",
+    year: "2022",
   },
   {
     id: "airport-experience",
     title: "Airport Digital Experience",
     description:
       "Designing the end-to-end digital journey for a major international airport — from pre-flight wayfinding to lounge check-in, departure board interfaces, and gate-side self-service kiosks.",
-    category: "Service Design",
+    category: "Service Designer",
     image: icon4Image,
     imageAlt: "Airport digital experience 3D concept",
     logo: airportLogo,
-    logoAlt: "Airport digital experience logo",
+    year: "2020",
   },
 ];
